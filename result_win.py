@@ -26,4 +26,15 @@ class ResultWin(QWidget):
         self.exit_button = QPushButton("Exit")
         self.exit_button.clicked.connect(self.close)
         
-       
+        self.layout.setContentsMargins(10, 10, 10, 10)
+        self.layout.setSpacing(8)
+
+        self.layout.addWidget(self.result_label)
+        self.layout.addWidget(self.category_label)
+        self.layout.addWidget(self.exit_button)
+        self.setLayout(self.layout)
+
+    def set_appear(self):
+        self.setWindowTitle("BMI Checker - Result")
+        self.resize(win_width, win_height)
+        self.move(win_x, win_y)

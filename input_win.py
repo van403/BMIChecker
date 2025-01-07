@@ -26,4 +26,3 @@ class InputWin(QWidget):
 
         self.calculate_button = QPushButton(txt_calculate)
         self.calculate_button.clicked.connect(self.calculate)
-        
